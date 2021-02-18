@@ -387,8 +387,14 @@
             </div>
                 <form action="#" class="mailing-form">
                     <h3 class="block-form-title">ПОДПИШИТЕСЬ НА РАССЫЛКУ</h3>
+                <div class="block-form-wrapper">
                     <input name="user-email" type="email" class="email-mailing-input" placeholder="E-mail">
-                    <button class="mailing-btn" type="submit">Подписатся</button>
+                    <button class="mailing-btn" type="submit">Подписатся
+                        <svg class="icon-send">
+                            <use href="./images/sprite.svg#icon-send"></use>
+                        </svg>
+                    </button>
+                </div>
                 </form>
         </div>
         
@@ -429,11 +435,12 @@
                     </span>
                 </label>
 
-               <label for="" class="modal-form-inpun-label">Комментарий</label>
+               <label class="modal-form-inpun-label">Комментарий
                     <textarea name="user-message" class="modal-form-message" placeholder="Введите текст"></textarea>
-               
-               <input name="user-policy" type="checkbox" class="modal-check-policy">
-                    <label for="" class="modal-check-label-policy">Соглашаюсь с рассылкой и принимаю Условия договора</label>
+                </label>
+
+               <input name="user-policy" type="checkbox" id="policy-chek" class="modal-check-policy visually-hidden">
+                    <label for="policy-chek" class="modal-check-label-policy">Соглашаюсь с рассылкой и принимаю<a href="#" class="modal-check-label-policy-link">Условия договора</a></label>
                
                <button type="submit" class="modal-form-btn">Отправить</button>
 
