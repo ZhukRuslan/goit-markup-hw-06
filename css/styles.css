@@ -649,6 +649,7 @@ img {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
     background: #2F303A;
+    color: #FFFFFF;
 }
 .email-mailing-input::placeholder {
     width: 47px;
@@ -960,16 +961,16 @@ img {
     display: inline-block;
     width: 16px;
     height: 15px;
-    outline: 2px solid #000000;
+    border: 2px solid #000000;
     margin-right: 8px;
     content: "";
 }
 .modal-check-policy:checked +.modal-check-label-policy::before {
-    outline: none;
+    border: none;
     background: var(--accent-color);
 }
 .modal-check-policy:focus +.modal-check-label-policy::before {
-    outline: none;
+    border: none;
     background: var(--accent-color);
     background-image: url("../images/icon-check.svg");
 }
