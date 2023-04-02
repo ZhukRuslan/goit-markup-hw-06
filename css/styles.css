@@ -654,3 +654,9 @@ a.link-studio:visited {
   transform: background-color var(--secondary-text-color);
   transform: fill var(--main-background-color);
 }
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
